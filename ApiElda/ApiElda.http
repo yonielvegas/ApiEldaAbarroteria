@@ -1,0 +1,6 @@
+@ApiElda_HostAddress = http://localhost:5153
+
+GET {{ApiElda_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

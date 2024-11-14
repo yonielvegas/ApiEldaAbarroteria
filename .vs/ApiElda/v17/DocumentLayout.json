@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\yoels\\source\\repos\\ApiElda\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|c:\\users\\yoels\\source\\repos\\apielda\\apielda\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|solutionrelative:apielda\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|c:\\users\\yoels\\source\\repos\\apielda\\apielda\\models\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|solutionrelative:apielda\\models\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|c:\\users\\yoels\\source\\repos\\apielda\\apielda\\contexts\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|solutionrelative:apielda\\contexts\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|c:\\users\\yoels\\source\\repos\\apielda\\apielda\\apielda.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|solutionrelative:apielda\\apielda.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|c:\\users\\yoels\\source\\repos\\apielda\\apielda\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|solutionrelative:apielda\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|c:\\users\\yoels\\source\\repos\\apielda\\apielda\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|solutionrelative:apielda\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|c:\\users\\yoels\\source\\repos\\apielda\\apielda\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|solutionrelative:apielda\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|c:\\users\\yoels\\source\\repos\\apielda\\apielda\\apielda.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|solutionrelative:apielda\\apielda.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ApiElda\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ApiElda\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-14T01:48:40.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApiElda.http",
+              "DocumentMoniker": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\ApiElda.http",
+              "RelativeDocumentMoniker": "ApiElda\\ApiElda.http",
+              "ToolTip": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\ApiElda.http",
+              "RelativeToolTip": "ApiElda\\ApiElda.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-11-14T01:44:07.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\appsettings.json",
+              "RelativeDocumentMoniker": "ApiElda\\appsettings.json",
+              "ToolTip": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\appsettings.json",
+              "RelativeToolTip": "ApiElda\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-14T01:21:01.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Clientes.cs",
+              "DocumentMoniker": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Models\\Clientes.cs",
+              "RelativeDocumentMoniker": "ApiElda\\Models\\Clientes.cs",
+              "ToolTip": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Models\\Clientes.cs",
+              "RelativeToolTip": "ApiElda\\Models\\Clientes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T01:10:43.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "ApiElda\\Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "ApiElda\\Controllers\\ClienteController.cs",
+              "ViewState": "AgIAABIAAAAAZmZmZmYGwCEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T01:07:40.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApiElda.csproj",
+              "DocumentMoniker": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\ApiElda.csproj",
+              "RelativeDocumentMoniker": "ApiElda\\ApiElda.csproj",
+              "ToolTip": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\ApiElda.csproj",
+              "RelativeToolTip": "ApiElda\\ApiElda.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-14T01:07:40.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Contexts\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "ApiElda\\Contexts\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Contexts\\ApplicationDbContext.cs",
+              "RelativeToolTip": "ApiElda\\Contexts\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T01:07:40.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Program.cs",
+              "RelativeDocumentMoniker": "ApiElda\\Program.cs",
+              "ToolTip": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Program.cs",
+              "RelativeToolTip": "ApiElda\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T01:07:37.26Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
