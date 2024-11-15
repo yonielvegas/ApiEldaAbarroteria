@@ -109,3 +109,4 @@ C:\Users\yoels\source\repos\ApiElda\ApiElda\obj\Debug\net8.0\refint\ApiElda.dll
 C:\Users\yoels\source\repos\ApiElda\ApiElda\obj\Debug\net8.0\ApiElda.pdb
 C:\Users\yoels\source\repos\ApiElda\ApiElda\obj\Debug\net8.0\ApiElda.genruntimeconfig.cache
 C:\Users\yoels\source\repos\ApiElda\ApiElda\obj\Debug\net8.0\ref\ApiElda.dll
+C:\Users\yoels\source\repos\ApiElda\ApiElda\obj\Debug\net8.0\ApiElda.sourcelink.json

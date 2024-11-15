@@ -44,5 +44,21 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "ApiElda.Controllers.ClienteController",
+    "Method": "ValidarLogin",
+    "RelativePath": "api/Cliente/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginRequest",
+        "Type": "ApiElda.Models.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

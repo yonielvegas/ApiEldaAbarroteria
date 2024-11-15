@@ -2,6 +2,7 @@
 using ApiElda.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace ApiElda.Controllers
 {
@@ -14,6 +15,20 @@ namespace ApiElda.Controllers
         public ClienteController(ApplicationDbContext applicationDbContext)
         {
             this.applicationDbContext = applicationDbContext;
+        }
+
+        // Método para codificar en base64
+        public static string CodificarBase64(string valor)
+        {
+            var valorBytes = System.Text.Encoding.UTF8.GetBytes(valor);
+            return Convert.ToBase64String(valorBytes);
+        }
+
+        // Método para decodificar desde base64
+        public static string DecodificarBase64(string valorCodificado)
+        {
+            var valorBytes = Convert.FromBase64String(valorCodificado);
+            return System.Text.Encoding.UTF8.GetString(valorBytes);
         }
 
         [HttpGet]
@@ -32,8 +47,13 @@ namespace ApiElda.Controllers
 
             try
             {
-                cliente.intento = 0;       // Intento siempre es 0
-                cliente.estado = true;     // Estado siempre es true
+                // Codificar usuario y contraseña antes de almacenarlos
+                cliente.usuario = CodificarBase64(cliente.usuario);
+                cliente.contrasena = CodificarBase64(cliente.contrasena);
+
+                // Asignar valores por defecto
+                cliente.intento = 0;
+                cliente.estado = true;
 
                 applicationDbContext.Clientes.Add(cliente);
                 await applicationDbContext.SaveChangesAsync();
@@ -46,6 +66,30 @@ namespace ApiElda.Controllers
             }
         }
 
+        [HttpPost("login")]
+        public async Task<ActionResult<object>> ValidarLogin([FromBody] LoginRequest loginRequest)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
 
+            var cliente = await applicationDbContext.Clientes
+                .FirstOrDefaultAsync(c => c.usuario == CodificarBase64(loginRequest.Usuario));
+
+            if (cliente == null)
+            {
+                return Unauthorized("Usuario o contraseña incorrectos.");
+            }
+
+            string contrasenaDecodificada = DecodificarBase64(cliente.contrasena);
+
+            if (contrasenaDecodificada != loginRequest.Contrasena)
+            {
+                return Unauthorized("Usuario o contraseña incorrectos.");
+            }
+
+            return Ok(new { cliente.id_cliente, cliente.nombre, cliente.apellido });
+        }
     }
 }

@@ -36,4 +36,14 @@ namespace ApiElda.Models
 
         public bool estado { get; set; }
     }
+
+    public class LoginRequest
+    {
+        [Required]
+        public string Usuario { get; set; }
+
+        [Required]
+        public string Contrasena { get; set; }
+    }
+
 }

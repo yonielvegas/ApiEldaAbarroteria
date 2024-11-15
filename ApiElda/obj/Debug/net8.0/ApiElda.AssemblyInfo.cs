@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiElda")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+593296358059feb1e53c11802d6eb80ace36dc0d")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiElda")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiElda")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
