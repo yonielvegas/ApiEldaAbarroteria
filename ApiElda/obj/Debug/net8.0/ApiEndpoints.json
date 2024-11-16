@@ -86,5 +86,47 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "ApiElda.Controllers.VentasController",
+    "Method": "ObtenerCarrito",
+    "RelativePath": "api/Ventas/Carrito/{idCliente}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCliente",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ApiElda.Models.Carrito\u002BDetalleFacturaResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ApiElda.Controllers.VentasController",
+    "Method": "ObjetosCarrito",
+    "RelativePath": "api/Ventas/obtener-carrito/{idCliente}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCliente",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
