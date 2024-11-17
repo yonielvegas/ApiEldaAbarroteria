@@ -89,6 +89,32 @@
   },
   {
     "ContainingType": "ApiElda.Controllers.VentasController",
+    "Method": "AgregarAlCarrito",
+    "RelativePath": "api/Ventas/AgregarAlCarrito",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCliente",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "idProducto",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "cantidad",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiElda.Controllers.VentasController",
     "Method": "ObtenerCarrito",
     "RelativePath": "api/Ventas/Carrito/{idCliente}",
     "HttpMethod": "GET",
