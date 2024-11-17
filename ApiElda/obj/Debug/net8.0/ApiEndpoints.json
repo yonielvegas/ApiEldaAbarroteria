@@ -141,6 +141,22 @@
   },
   {
     "ContainingType": "ApiElda.Controllers.VentasController",
+    "Method": "ActualizarEstadoCarrito",
+    "RelativePath": "api/Ventas/Carrito/{idCliente}/ActualizarEstado",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCliente",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiElda.Controllers.VentasController",
     "Method": "ObjetosCarrito",
     "RelativePath": "api/Ventas/obtener-carrito/{idCliente}",
     "HttpMethod": "GET",

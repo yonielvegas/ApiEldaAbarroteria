@@ -164,6 +164,32 @@ namespace ApiElda.Controllers
         }
 
 
+        [HttpPut("Carrito/{idCliente}/ActualizarEstado")]
+        public async Task<IActionResult> ActualizarEstadoCarrito(int idCliente)
+        {
+            // Obtener los detalles de venta del cliente con estado_carro en false
+            var detallesVenta = await _dbContext.DetallesVenta
+                .Where(dv => dv.id_cliente == idCliente && dv.estado_carro == false)
+                .ToListAsync();
+
+            // Verificar si hay productos en el carrito
+            if (!detallesVenta.Any())
+            {
+                return NotFound(new { mensaje = "No se encontraron productos en el carrito para este cliente." });
+            }
+
+            // Actualizar el estado del carrito a true para cada detalle de venta
+            foreach (var detalle in detallesVenta)
+            {
+                detalle.estado_carro = true;
+            }
+
+            // Guardar los cambios en la base de datos
+            await _dbContext.SaveChangesAsync();
+
+            // Retornar una respuesta indicando éxito
+            return Ok(new { mensaje = "El estado del carrito ha sido actualizado correctamente." });
+        }
 
     }
 }
