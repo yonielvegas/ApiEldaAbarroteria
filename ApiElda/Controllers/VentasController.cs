@@ -149,10 +149,7 @@ namespace ApiElda.Controllers
                 // Actualizar el monto total de la venta
                 ventaActiva.monto += producto.precio_uni * cantidad;
 
-                // Reducir la cantidad en stock del producto
-                producto.cantidad_stock -= cantidad;
-
-                // Guardar cambios
+                // Guardar cambios sin reducir el stock
                 await _dbContext.SaveChangesAsync();
 
                 return Ok(new { mensaje = "Producto agregado al carrito con éxito." });
@@ -164,32 +161,58 @@ namespace ApiElda.Controllers
         }
 
 
+
         [HttpPut("Carrito/{idCliente}/ActualizarEstado")]
         public async Task<IActionResult> ActualizarEstadoCarrito(int idCliente)
         {
-            // Obtener los detalles de venta del cliente con estado_carro en false
-            var detallesVenta = await _dbContext.DetallesVenta
-                .Where(dv => dv.id_cliente == idCliente && dv.estado_carro == false)
-                .ToListAsync();
-
-            // Verificar si hay productos en el carrito
-            if (!detallesVenta.Any())
+            try
             {
-                return NotFound(new { mensaje = "No se encontraron productos en el carrito para este cliente." });
-            }
+                // Obtener los detalles de venta del cliente con estado_carro en false
+                var detallesVenta = await _dbContext.DetallesVenta
+                    .Where(dv => dv.id_cliente == idCliente && dv.estado_carro == false)
+                    .Include(dv => dv.Producto) // Incluir el producto para verificar stock
+                    .ToListAsync();
 
-            // Actualizar el estado del carrito a true para cada detalle de venta
-            foreach (var detalle in detallesVenta)
+                // Verificar si hay productos en el carrito
+                if (!detallesVenta.Any())
+                {
+                    return NotFound(new { mensaje = "No se encontraron productos en el carrito para este cliente." });
+                }
+
+                // Verificar si hay suficiente stock para cada producto en el carrito
+                foreach (var detalle in detallesVenta)
+                {
+                    var producto = detalle.Producto;
+
+                    // Verificar si hay suficiente stock
+                    if (producto.cantidad_stock < detalle.cantidad)
+                    {
+                        return BadRequest(new { mensaje = $"No hay suficiente stock para el producto {producto.nombre}." });
+                    }
+
+                    // Restar la cantidad del producto en la tabla de productos
+                    producto.cantidad_stock -= detalle.cantidad;
+                }
+
+                // Si todo está bien, cambiar el estado del carrito a true
+                foreach (var detalle in detallesVenta)
+                {
+                    detalle.estado_carro = true;
+                }
+
+                // Guardar los cambios en la base de datos
+                await _dbContext.SaveChangesAsync();
+
+                // Retornar una respuesta indicando éxito
+                return Ok(new { mensaje = "El estado del carrito ha sido actualizado correctamente." });
+            }
+            catch (Exception ex)
             {
-                detalle.estado_carro = true;
+                // Manejar errores
+                return StatusCode(500, new { mensaje = $"Error al actualizar el estado del carrito: {ex.Message}" });
             }
-
-            // Guardar los cambios en la base de datos
-            await _dbContext.SaveChangesAsync();
-
-            // Retornar una respuesta indicando éxito
-            return Ok(new { mensaje = "El estado del carrito ha sido actualizado correctamente." });
         }
+
 
     }
 }

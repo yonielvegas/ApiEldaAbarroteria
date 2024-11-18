@@ -7,24 +7,32 @@
       "RelativeMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|solutionrelative:apielda\\controllers\\ventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|c:\\users\\yoels\\source\\repos\\apielda\\apielda\\models\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|solutionrelative:apielda\\models\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|c:\\users\\yoels\\source\\repos\\apielda\\apielda\\models\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|solutionrelative:apielda\\models\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|c:\\users\\yoels\\source\\repos\\apielda\\apielda\\models\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|solutionrelative:apielda\\models\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|c:\\users\\yoels\\source\\repos\\apielda\\apielda\\models\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|solutionrelative:apielda\\models\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|c:\\users\\yoels\\source\\repos\\apielda\\apielda\\contexts\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|solutionrelative:apielda\\contexts\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|c:\\users\\yoels\\source\\repos\\apielda\\apielda\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|solutionrelative:apielda\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|c:\\users\\yoels\\source\\repos\\apielda\\apielda\\models\\detallesventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|solutionrelative:apielda\\models\\detallesventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|c:\\users\\yoels\\source\\repos\\apielda\\apielda\\models\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|solutionrelative:apielda\\models\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|c:\\users\\yoels\\source\\repos\\apielda\\apielda\\models\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|solutionrelative:apielda\\models\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|c:\\users\\yoels\\source\\repos\\apielda\\apielda\\models\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|solutionrelative:apielda\\models\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|c:\\users\\yoels\\source\\repos\\apielda\\apielda\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,10 +47,6 @@
       "RelativeMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|solutionrelative:apielda\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|c:\\users\\yoels\\source\\repos\\apielda\\apielda\\contexts\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|solutionrelative:apielda\\contexts\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|c:\\users\\yoels\\source\\repos\\apielda\\apielda\\apielda.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|solutionrelative:apielda\\apielda.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
@@ -53,10 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|c:\\users\\yoels\\source\\repos\\apielda\\apielda\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|solutionrelative:apielda\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|c:\\users\\yoels\\source\\repos\\apielda\\apielda\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|solutionrelative:apielda\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|c:\\users\\yoels\\source\\repos\\apielda\\apielda\\apielda.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -82,16 +82,16 @@
               "Title": "VentasController.cs",
               "DocumentMoniker": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Controllers\\VentasController.cs",
               "RelativeDocumentMoniker": "ApiElda\\Controllers\\VentasController.cs",
-              "ToolTip": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Controllers\\VentasController.cs",
-              "RelativeToolTip": "ApiElda\\Controllers\\VentasController.cs",
-              "ViewState": "AgIAAKAAAAAAAAAAAAAkwMAAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Controllers\\VentasController.cs*",
+              "RelativeToolTip": "ApiElda\\Controllers\\VentasController.cs*",
+              "ViewState": "AgIAAKkAAACAAAAAAAAqwMEAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T16:41:19.908Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Categoria.cs",
               "DocumentMoniker": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Models\\Categoria.cs",
               "RelativeDocumentMoniker": "ApiElda\\Models\\Categoria.cs",
@@ -103,13 +103,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "DetallesVenta.cs",
               "DocumentMoniker": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Models\\DetallesVenta.cs",
               "RelativeDocumentMoniker": "ApiElda\\Models\\DetallesVenta.cs",
               "ToolTip": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Models\\DetallesVenta.cs",
               "RelativeToolTip": "ApiElda\\Models\\DetallesVenta.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T00:15:39.802Z"
             },
@@ -127,19 +127,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Carrito.cs",
               "DocumentMoniker": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Models\\Carrito.cs",
               "RelativeDocumentMoniker": "ApiElda\\Models\\Carrito.cs",
               "ToolTip": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Models\\Carrito.cs",
               "RelativeToolTip": "ApiElda\\Models\\Carrito.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwBIAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T00:09:41.132Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "ProductoController.cs",
               "DocumentMoniker": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Controllers\\ProductoController.cs",
               "RelativeDocumentMoniker": "ApiElda\\Controllers\\ProductoController.cs",
@@ -151,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "ClienteController.cs",
               "DocumentMoniker": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Controllers\\ClienteController.cs",
               "RelativeDocumentMoniker": "ApiElda\\Controllers\\ClienteController.cs",
@@ -163,7 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Productos.cs",
               "DocumentMoniker": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Models\\Productos.cs",
               "RelativeDocumentMoniker": "ApiElda\\Models\\Productos.cs",
@@ -175,19 +175,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Clientes.cs",
               "DocumentMoniker": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Models\\Clientes.cs",
               "RelativeDocumentMoniker": "ApiElda\\Models\\Clientes.cs",
               "ToolTip": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Models\\Clientes.cs",
               "RelativeToolTip": "ApiElda\\Models\\Clientes.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAqwDEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T01:10:43.051Z"
+              "WhenOpened": "2024-11-14T01:10:43.051Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 4,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "ApiElda\\Properties\\launchSettings.json",
@@ -199,7 +200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ApiElda.http",
               "DocumentMoniker": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\ApiElda.http",
               "RelativeDocumentMoniker": "ApiElda\\ApiElda.http",
@@ -211,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\appsettings.json",
               "RelativeDocumentMoniker": "ApiElda\\appsettings.json",
@@ -235,19 +236,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Contexts\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "ApiElda\\Contexts\\ApplicationDbContext.cs",
               "ToolTip": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Contexts\\ApplicationDbContext.cs",
               "RelativeToolTip": "ApiElda\\Contexts\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAQwBcAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAuwBcAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-14T01:07:40.18Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Program.cs",
               "RelativeDocumentMoniker": "ApiElda\\Program.cs",
