@@ -49,6 +49,7 @@ namespace ApiElda.Controllers
                 MontoTotal = detallesVenta.Sum(d => d.cantidad * d.Producto.precio_uni), // Calcular el monto total
                 Productos = detallesVenta.Select(dv => new Carrito.DetalleFacturaResponse.ProductoDetalle
                 {
+                    Id_Producto = dv.id_producto,
                     NombreProducto = dv.Producto.nombre,
                     Cantidad = dv.cantidad,
                     Precio = dv.cantidad * dv.Producto.precio_uni, // Calcula el precio total
@@ -212,6 +213,59 @@ namespace ApiElda.Controllers
                 return StatusCode(500, new { mensaje = $"Error al actualizar el estado del carrito: {ex.Message}" });
             }
         }
+
+
+        [HttpPut("Carrito/ActualizarCantidad")]
+        public async Task<IActionResult> ActualizarCantidadEnCarrito(int idCliente, int idProducto, int nuevaCantidad)
+        {
+            try
+            {
+                // Validar cliente
+                var cliente = await _dbContext.Clientes.FindAsync(idCliente);
+                if (cliente == null)
+                {
+                    return NotFound(new { mensaje = "Cliente no encontrado." });
+                }
+
+                // Validar producto
+                var producto = await _dbContext.Productos.FindAsync(idProducto);
+                if (producto == null)
+                {
+                    return NotFound(new { mensaje = "Producto no encontrado." });
+                }
+
+                // Buscar el detalle del producto en el carrito del cliente
+                var detalleVenta = await _dbContext.DetallesVenta
+                    .FirstOrDefaultAsync(dv => dv.id_cliente == idCliente && dv.id_producto == idProducto && !dv.estado_carro);
+
+                if (detalleVenta == null)
+                {
+                    return NotFound(new { mensaje = "El producto no se encuentra en el carrito o ya fue procesado." });
+                }
+
+                if (nuevaCantidad == 0)
+                {
+                    // Eliminar el producto del carrito
+                    _dbContext.DetallesVenta.Remove(detalleVenta);
+                    await _dbContext.SaveChangesAsync();
+                    return Ok(new { mensaje = "El producto ha sido eliminado del carrito." });
+                }
+
+                // Actualizar la cantidad en el detalle de venta
+                detalleVenta.cantidad = nuevaCantidad;
+
+                // Guardar los cambios
+                await _dbContext.SaveChangesAsync();
+
+                return Ok(new { mensaje = "La cantidad del producto en el carrito ha sido actualizada correctamente." });
+            }
+            catch (Exception ex)
+            {
+                // Manejo de errores
+                return StatusCode(500, new { mensaje = $"Error al actualizar la cantidad del producto en el carrito: {ex.Message}" });
+            }
+        }
+
 
 
     }
