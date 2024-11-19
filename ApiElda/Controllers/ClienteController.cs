@@ -91,5 +91,103 @@ namespace ApiElda.Controllers
 
             return Ok(new { cliente.id_cliente, cliente.nombre, cliente.apellido });
         }
+
+
+
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateCliente(int id, Clientes cliente)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            try
+            {
+                // Buscar el cliente en la base de datos
+                var clienteExistente = await applicationDbContext.Clientes.FindAsync(id);
+
+                if (clienteExistente == null)
+                {
+                    return NotFound(new { mensaje = "Cliente no encontrado." });
+                }
+
+                // Bandera para verificar si algún dato cambió
+                bool datosModificados = false;
+
+                // Actualizar cada campo solo si es diferente del actual y se envió un valor
+                if (!string.IsNullOrWhiteSpace(cliente.nombre) && cliente.nombre != clienteExistente.nombre)
+                {
+                    clienteExistente.nombre = cliente.nombre;
+                    datosModificados = true;
+                }
+
+                if (!string.IsNullOrWhiteSpace(cliente.apellido) && cliente.apellido != clienteExistente.apellido)
+                {
+                    clienteExistente.apellido = cliente.apellido;
+                    datosModificados = true;
+                }
+
+                if (!string.IsNullOrWhiteSpace(cliente.cedula) && cliente.cedula != clienteExistente.cedula)
+                {
+                    clienteExistente.cedula = cliente.cedula;
+                    datosModificados = true;
+                }
+
+                if (!string.IsNullOrWhiteSpace(cliente.telefono) && cliente.telefono != clienteExistente.telefono)
+                {
+                    clienteExistente.telefono = cliente.telefono;
+                    datosModificados = true;
+                }
+
+                if (!string.IsNullOrWhiteSpace(cliente.correo) && cliente.correo != clienteExistente.correo)
+                {
+                    clienteExistente.correo = cliente.correo;
+                    datosModificados = true;
+                }
+
+                if (!string.IsNullOrWhiteSpace(cliente.usuario) && CodificarBase64(cliente.usuario) != clienteExistente.usuario)
+                {
+                    clienteExistente.usuario = CodificarBase64(cliente.usuario);
+                    datosModificados = true;
+                }
+
+                if (!string.IsNullOrWhiteSpace(cliente.contrasena) && CodificarBase64(cliente.contrasena) != clienteExistente.contrasena)
+                {
+                    clienteExistente.contrasena = CodificarBase64(cliente.contrasena);
+                    datosModificados = true;
+                }
+
+                if (cliente.intento >= 0 && cliente.intento != clienteExistente.intento)
+                {
+                    clienteExistente.intento = cliente.intento;
+                    datosModificados = true;
+                }
+
+                if (cliente.estado != clienteExistente.estado)
+                {
+                    clienteExistente.estado = cliente.estado;
+                    datosModificados = true;
+                }
+
+                // Verificar si no se modificó ningún dato
+                if (!datosModificados)
+                {
+                    return BadRequest(new { mensaje = "No se realizaron modificaciones, todos los datos enviados son iguales a los actuales." });
+                }
+
+                // Guardar los cambios en la base de datos
+                await applicationDbContext.SaveChangesAsync();
+
+                return Ok(new { mensaje = "Cliente actualizado con éxito.", cliente = clienteExistente });
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                return StatusCode(500, "Ocurrió un error al actualizar el cliente.");
+            }
+        }
+
+
     }
 }

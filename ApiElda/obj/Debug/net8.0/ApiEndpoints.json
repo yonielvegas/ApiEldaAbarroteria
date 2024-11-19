@@ -47,6 +47,27 @@
   },
   {
     "ContainingType": "ApiElda.Controllers.ClienteController",
+    "Method": "UpdateCliente",
+    "RelativePath": "api/Cliente/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "cliente",
+        "Type": "ApiElda.Models.Clientes",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiElda.Controllers.ClienteController",
     "Method": "ValidarLogin",
     "RelativePath": "api/Cliente/login",
     "HttpMethod": "POST",
