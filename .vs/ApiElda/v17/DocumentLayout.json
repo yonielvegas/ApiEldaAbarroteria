@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\yoels\\source\\repos\\ApiElda\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|c:\\users\\yoels\\source\\repos\\apielda\\apielda\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|solutionrelative:apielda\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|c:\\users\\yoels\\source\\repos\\apielda\\apielda\\controllers\\ventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|solutionrelative:apielda\\controllers\\ventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|c:\\users\\yoels\\source\\repos\\apielda\\apielda\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|solutionrelative:apielda\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48E8DC69-5D8B-4BD2-B4A3-D0AE28198604}|ApiElda\\ApiElda.csproj|c:\\users\\yoels\\source\\repos\\apielda\\apielda\\models\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,13 +78,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "VentasController.cs",
               "DocumentMoniker": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Controllers\\VentasController.cs",
               "RelativeDocumentMoniker": "ApiElda\\Controllers\\VentasController.cs",
               "ToolTip": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Controllers\\VentasController.cs",
               "RelativeToolTip": "ApiElda\\Controllers\\VentasController.cs",
-              "ViewState": "AgIAAM4AAAAAAAAAAAAqwNwAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAPwAAAAAAAAAAAAswCQBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T16:41:19.908Z",
               "EditorCaption": ""
@@ -151,13 +151,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ClienteController.cs",
               "DocumentMoniker": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Controllers\\ClienteController.cs",
               "RelativeDocumentMoniker": "ApiElda\\Controllers\\ClienteController.cs",
               "ToolTip": "C:\\Users\\yoels\\source\\repos\\ApiElda\\ApiElda\\Controllers\\ClienteController.cs",
               "RelativeToolTip": "ApiElda\\Controllers\\ClienteController.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAUwL0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAUwH0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-14T01:07:40.985Z",
               "EditorCaption": ""

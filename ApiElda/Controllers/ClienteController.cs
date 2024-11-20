@@ -66,6 +66,9 @@ namespace ApiElda.Controllers
             }
         }
 
+
+
+
         [HttpPost("login")]
         public async Task<ActionResult<object>> ValidarLogin([FromBody] LoginRequest loginRequest)
         {
@@ -79,18 +82,50 @@ namespace ApiElda.Controllers
 
             if (cliente == null)
             {
-                return Unauthorized("Usuario o contraseña incorrectos.");
+                return Unauthorized(new { mensaje = "Usuario o contraseña incorrectos." });
+            }
+
+            if (!cliente.estado)
+            {
+                return Unauthorized(new { mensaje = "La cuenta está bloqueada. Contacte al administrador." });
             }
 
             string contrasenaDecodificada = DecodificarBase64(cliente.contrasena);
 
             if (contrasenaDecodificada != loginRequest.Contrasena)
             {
-                return Unauthorized("Usuario o contraseña incorrectos.");
+                // Incrementar intentos, pero asegurarse de no exceder el máximo permitido
+                cliente.intento = Math.Min(cliente.intento + 1, 3);
+
+                if (cliente.intento >= 3)
+                {
+                    cliente.estado = false;
+                    await applicationDbContext.SaveChangesAsync();
+                    return Unauthorized(new { mensaje = "Usuario o contraseña incorrectos. La cuenta ha sido bloqueada." });
+                }
+
+                await applicationDbContext.SaveChangesAsync();
+                return Unauthorized(new { mensaje = "Usuario o contraseña incorrectos.", intentosRestantes = 3 - cliente.intento });
             }
 
-            return Ok(new { cliente.id_cliente, cliente.nombre, cliente.apellido });
+            // Resetear intentos en caso de éxito
+            cliente.intento = 0;
+            await applicationDbContext.SaveChangesAsync();
+
+            return Ok(new
+            {
+                mensaje = "Inicio de sesión exitoso.",
+                cliente = new
+                {
+                    cliente.id_cliente,
+                    cliente.nombre,
+                    cliente.apellido
+                }
+            });
         }
+
+
+
 
 
 

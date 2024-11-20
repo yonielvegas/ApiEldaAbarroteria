@@ -87,6 +87,12 @@ namespace ApiElda.Controllers
         {
             try
             {
+                // Validar que la cantidad sea mayor a 0
+                if (cantidad <= 0)
+                {
+                    return BadRequest(new { mensaje = "La cantidad debe ser mayor a 0." });
+                }
+
                 // Validar cliente
                 var cliente = await _dbContext.Clientes.FindAsync(idCliente);
                 if (cliente == null)
@@ -101,6 +107,7 @@ namespace ApiElda.Controllers
                     return NotFound(new { mensaje = "Producto no encontrado." });
                 }
 
+                // Validar stock disponible
                 if (producto.cantidad_stock < cantidad)
                 {
                     return BadRequest(new { mensaje = "No hay suficiente stock disponible." });
@@ -160,6 +167,7 @@ namespace ApiElda.Controllers
                 return StatusCode(500, new { mensaje = $"Error al agregar producto al carrito: {ex.Message}" });
             }
         }
+
 
 
 
@@ -247,12 +255,29 @@ namespace ApiElda.Controllers
                 {
                     // Eliminar el producto del carrito
                     _dbContext.DetallesVenta.Remove(detalleVenta);
+
+                    // Actualizar el monto total de la venta
+                    var venta = await _dbContext.Venta.FindAsync(detalleVenta.id_venta);
+                    if (venta != null)
+                    {
+                        venta.monto -= producto.precio_uni * detalleVenta.cantidad;
+                        if (venta.monto < 0) venta.monto = 0; // Asegurarse de que el monto no sea negativo
+                    }
+
                     await _dbContext.SaveChangesAsync();
                     return Ok(new { mensaje = "El producto ha sido eliminado del carrito." });
                 }
 
                 // Actualizar la cantidad en el detalle de venta
+                var diferenciaCantidad = nuevaCantidad - detalleVenta.cantidad;
                 detalleVenta.cantidad = nuevaCantidad;
+
+                // Actualizar el monto total de la venta
+                var ventaActiva = await _dbContext.Venta.FindAsync(detalleVenta.id_venta);
+                if (ventaActiva != null)
+                {
+                    ventaActiva.monto += producto.precio_uni * diferenciaCantidad;
+                }
 
                 // Guardar los cambios
                 await _dbContext.SaveChangesAsync();
@@ -265,6 +290,7 @@ namespace ApiElda.Controllers
                 return StatusCode(500, new { mensaje = $"Error al actualizar la cantidad del producto en el carrito: {ex.Message}" });
             }
         }
+
 
 
 
