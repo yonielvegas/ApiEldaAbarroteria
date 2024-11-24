@@ -5,14 +5,17 @@ namespace ApiElda.Contexts
 {
     public class ApplicationDbContext:DbContext
     {
+        //configurar el contexto (cadena de conexion(
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
+
+        //Mapeo de las tablas de la base de datos
         public DbSet<Clientes> Clientes { get; set; }
         public DbSet<Productos> Productos { get; set; }
         public DbSet<Venta> Venta { get; set; }
         public DbSet<DetallesVenta> DetallesVenta { get; set; }
         public DbSet<Categoria> Categoria { get; set; }
 
-
+        //OnModelCreating es un metodo de Entity Framework para configurar manualmente relaciones. (en este caso crear un llave compuesta)
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Define la clave primaria compuesta

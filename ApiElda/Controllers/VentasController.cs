@@ -16,6 +16,9 @@ namespace ApiElda.Controllers
             this._dbContext = dbContext;
         }
 
+
+
+        //Este Get es para obtener todos los datos del carrito de un cliente
         [HttpGet("Carrito/{idCliente}")]
         public async Task<ActionResult<Carrito.DetalleFacturaResponse>> ObtenerCarrito(int idCliente)
         {
@@ -62,6 +65,8 @@ namespace ApiElda.Controllers
         }
 
 
+
+        //Este Get es para obtener la cantidad de elementos que tiene un cliente.
         [HttpGet("obtener-carrito/{idCliente}")]
         public async Task<IActionResult> ObjetosCarrito(int idCliente)
         {
@@ -82,6 +87,9 @@ namespace ApiElda.Controllers
         }
 
 
+
+
+        //este post es para agregar productos al carrito de un cliente
         [HttpPost("AgregarAlCarrito")]
         public async Task<IActionResult> AgregarAlCarrito(int idCliente, int idProducto, int cantidad)
         {
@@ -171,6 +179,7 @@ namespace ApiElda.Controllers
 
 
 
+        //este put es para cuando el cliente desea que su pedido sea procesado 
         [HttpPut("Carrito/{idCliente}/ActualizarEstado")]
         public async Task<IActionResult> ActualizarEstadoCarrito(int idCliente)
         {
@@ -222,7 +231,11 @@ namespace ApiElda.Controllers
             }
         }
 
+        
 
+
+
+        //este Put es para actaulizar la cantidad de producto que esta en el carro
         [HttpPut("Carrito/ActualizarCantidad")]
         public async Task<IActionResult> ActualizarCantidadEnCarrito(int idCliente, int idProducto, int nuevaCantidad)
         {
@@ -290,9 +303,5 @@ namespace ApiElda.Controllers
                 return StatusCode(500, new { mensaje = $"Error al actualizar la cantidad del producto en el carrito: {ex.Message}" });
             }
         }
-
-
-
-
     }
 }

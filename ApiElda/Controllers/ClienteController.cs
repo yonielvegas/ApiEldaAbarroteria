@@ -31,12 +31,16 @@ namespace ApiElda.Controllers
             return System.Text.Encoding.UTF8.GetString(valorBytes);
         }
 
+
+        //este get es para obtener la informacion de todos los clientes. 
         [HttpGet]
         public async Task<ActionResult<List<Clientes>>> GetClientes()
         {
             return await applicationDbContext.Clientes.ToListAsync();
         }
 
+
+        //Este post se utiliza para crear un nuevo usuario
         [HttpPost]
         public async Task<ActionResult<Clientes>> CreateCliente(Clientes cliente)
         {
@@ -68,7 +72,7 @@ namespace ApiElda.Controllers
 
 
 
-
+        //Este es para logear a los usuarios
         [HttpPost("login")]
         public async Task<ActionResult<object>> ValidarLogin([FromBody] LoginRequest loginRequest)
         {
@@ -129,7 +133,7 @@ namespace ApiElda.Controllers
 
 
 
-
+        //Este Put se tuiliza para actaulizar la informacion de un cliente.
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateCliente(int id, Clientes cliente)
         {

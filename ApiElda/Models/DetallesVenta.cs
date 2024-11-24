@@ -18,7 +18,6 @@ namespace ApiElda.Models
         [Column(Order = 2)]
         public int id_producto { get; set; }
 
-        // Propiedades de navegación
         public Venta Venta { get; set; }
         public Productos Producto { get; set; }
         public Clientes Cliente { get; set; }
