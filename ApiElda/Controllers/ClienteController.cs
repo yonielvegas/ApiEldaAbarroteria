@@ -116,14 +116,15 @@ namespace ApiElda.Controllers
             cliente.intento = 0;
             await applicationDbContext.SaveChangesAsync();
 
+            var usuario2 = DecodificarBase64(cliente.usuario);
+
             return Ok(new
             {
                 mensaje = "Inicio de sesión exitoso.",
                 cliente = new
                 {
                     cliente.id_cliente,
-                    cliente.nombre,
-                    cliente.apellido
+                    usuario2
                 }
             });
         }

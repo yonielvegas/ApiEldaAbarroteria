@@ -28,6 +28,7 @@ namespace ApiElda.Models
         [StringLength(255, ErrorMessage = "La ruta de la imagen no puede exceder los 255 caracteres")]
         public string imagen { get; set; }
 
+        [ForeignKey("Categoria")]
         [Required(ErrorMessage = "La categoría es obligatoria")]
         public int id_categoria { get; set; }
     }

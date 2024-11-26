@@ -59,7 +59,7 @@ namespace ApiElda.Controllers
                     Imagen = dv.Producto.imagen // Incluir la imagen del producto
                 }).ToList()
             };
-
+   
             // Devolver la respuesta en formato JSON
             return Ok(response);
         }
